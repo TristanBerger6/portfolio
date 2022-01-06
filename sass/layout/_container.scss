@@ -1,0 +1,10 @@
+.content {
+  &.blur {
+    filter: blur(5px) brightness(0.7);
+  }
+}
+
+.section-container {
+  position: relative;
+  padding: 5rem min(80px, 8%);
+}

@@ -1,0 +1,46 @@
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1500px;
+
+@font-face {
+  font-family: 'SF Mono Regular';
+  src: url('../../public/fonts/SFMonoRegular.woff') format('woff');
+}
+
+:root {
+  /* colors */
+  // 353, 57%, 47%;
+  --clr-grey: 0, 0%, 11%;
+  --clr-red: 6, 100%, 60%;
+  --clr-grey-light: 0, 0%, 75%;
+  --clr-grey-dark: 0, 0%, 3%;
+  --clr-green: 147, 64%, 61%;
+  /* font-sizes */
+  --fs-700: 3rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1rem;
+  --fs-400: 0.85rem;
+  --fs-300: 0.8rem;
+
+  /* font-families */
+  --ff-mono: 'SF Mono Regular', serif;
+  --ff-sans: 'open sans', sans-serif;
+}
+
+@media (min-width: $screen-sm-min) {
+  :root {
+    --fs-700: 4.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.1rem;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  :root {
+    --fs-700: 6rem;
+    --fs-600: 2.5rem;
+    --fs-500: 1.2rem;
+  }
+}

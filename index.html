@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./public/css/style.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <script src="http://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js"></script>
+  <script src="js/index.js" async></script>
+  
+  <title>Tristan Berger</title>
+ </head>
+
+<body>
+  <div>
+    <a class="skip-to-content" href="#main">Skip to content</a>
+
+    <header class="primary-header flex ff-mono fs-300">
+      <a class="logo" href='/'>Tristan Berger</a>
+      <button class="mobile-nav-toggle" aria-controls="nav-bar"  >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="nav-bar" class="nav-bar" aria-expanded="false"> 
+        <div class="nav-bar__content flex">
+        <ol class="flex">
+          <li><a  class="link" href="#about"><span aria-hidden="true">01.</span> About </a></li>
+          <li><a  class="link" href="#skills"> <span aria-hidden="true">02.</span>  Skills </a></li>
+          <li><a  class="link" href="#"> <span aria-hidden="true">03.</span>  Work </a></li>
+          <li><a  class="link" href="#"> <span aria-hidden="true">04.</span>  Contact </a></li>
+        </ol>
+        <button class="btn fw-700"> Resume </button>
+      </div>
+      </nav>  
+    </header>
+
+    <div class="content">
+    <main>
+      <section class="hero section-container flex">
+        <div class="hero__content">
+          <h1 class="ff-sans  text-white rubberband flex" aria-label="Hi, I'm Tristan ">
+            <div class="rubberband__line flex">
+            <span aria-hidden="true" class='rubberband__item'>H</span>
+            <span aria-hidden="true" class='rubberband__item'>i</span>
+            <span aria-hidden="true" class='rubberband__item'>,</span>
+          </div>
+          <div class="rubberband__line flex">
+            <span aria-hidden="true" class='rubberband__item'>I</span>
+            <span aria-hidden="true" class='rubberband__item'>'</span>
+            <span aria-hidden="true" class='rubberband__item'>m</span>
+            <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
+            <span aria-hidden="true" class='rubberband__item'>r</span>
+            <span aria-hidden="true" class='rubberband__item'>i</span>
+            <span aria-hidden="true" class='rubberband__item'>s</span>
+            <span aria-hidden="true" class='rubberband__item'>t</span>
+            <span aria-hidden="true" class='rubberband__item'>a</span>
+            <span aria-hidden="true" class='rubberband__item'>n</span>
+          </div>
+          </h1>
+          <p class="text-red fs-500 fw-400 ff-mono"> a self-taught web developer</p>
+        </div>
+        <canvas id="waves"></canvas>
+        <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+        <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+      
+      <section id="about" class="about section-container">
+        <div class="about__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">01.</span>  About me</h2>
+        <div class="about__content flex">
+          <div class="about__text fs-500 text-grey-light">
+            <p>Hello ! My name is Tristan Berger, I'm a 24 years old engineer aspiring to become a full-stack developer.</p>
+            <p>I have one year of experience as an electronic engineer, but I decided in September 2021 to jump into the world of web development. 
+              I started this journey by myself following online courses and creating my own projects.</p>
+              
+            <p>I feel like this environment fits for me, I’m comfortable and most importantly I love what I’m doing.</p>
+          </div>
+          <div class="about__image"> <img  src='./public/img/profile_300px.jpg' alt='profile image'></div>
+        </div>
+      </div>
+      <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+
+      <section id="skills" class="skills section-container">
+        <div class="skills__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">02.</span>  My Skills</h2>
+        <div class="skills__content flex">
+          <div class="skills__text fs-500 text-grey-light">
+            <p>Since the beginning of my journey, I use online resources such as openClassrooms, Codeacademy etc.. 
+              to learn languages of the web, but I also followed courses about web fundamentals, 
+              SEO and accessibility which were notions I didn’t know much about.</p>
+            <p>I used to develop in C/C++, so it made it a bit easier to learn HTML/CSS/JavaScript and React. </p>
+
+            <p>To develop my skills as much as possible, i’ve completed FrontendMentor challenges, and I've made some personal projects. </p>
+          </div>
+          <div class="skills__logos grid"> 
+              <i class='fab fab fa-html5'></i>
+              <i class='fab fab fa-css3-alt'></i>
+              <i class='fab fab fa-js'></i>
+              <i class='fab fab fa-react'></i>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+  
+    </main>
+  </div>
+
+
+  </div>
+    
+
+  
+
+
+</body>
+</html>

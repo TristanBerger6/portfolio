@@ -1,0 +1,26 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  font-size: var(--fs-600);
+  font-weight: 700;
+  span {
+    font-family: var(--ff-mono);
+    color: hsl(var(--clr-red));
+  }
+  &::after {
+    flex: auto;
+    content: '';
+    position: relative;
+    display: block;
+    top: 4px;
+    left: 0;
+    height: 2px;
+    margin-left: 10px;
+    background: linear-gradient(
+      to right,
+      hsl(var(--clr-red)),
+      hsl(var(--clr-green))
+    );
+  }
+}

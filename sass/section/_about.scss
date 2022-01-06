@@ -1,0 +1,40 @@
+.about {
+  display: grid;
+  justify-content: center;
+
+  &__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    align-self: flex-start;
+    p {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+  &__image {
+    padding-inline: 10%;
+    img {
+      border-radius: 8px;
+      box-shadow: 2px 2px 2px hsl(var(--clr-red));
+    }
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &__text {
+      max-width: 60ch;
+    }
+    &__image {
+      padding-inline: 0;
+      min-width: 200px;
+    }
+  }
+}
