@@ -65,8 +65,8 @@ function getInputVal(id) {
 function saveMessage(name, email, message) {
   const postData = {
     name: name,
-    email: email,
     message: message,
+    email: email,
   };
   const newPostKey = push(child(ref(database), ' messages')).key;
 
