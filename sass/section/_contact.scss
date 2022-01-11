@@ -1,0 +1,11 @@
+.contact {
+  &__content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  &__form {
+    flex-direction: column;
+    width: 100%;
+  }
+}

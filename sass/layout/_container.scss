@@ -7,4 +7,10 @@
 .section-container {
   position: relative;
   padding: 5rem min(80px, 8%);
+  display: grid;
+  justify-content: center;
+  &--hero {
+    position: relative;
+    padding: 5rem min(80px, 8%);
+  }
 }
