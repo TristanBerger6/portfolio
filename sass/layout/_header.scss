@@ -17,4 +17,11 @@
   &.scrolled-bot {
     transform: translateY(-100%);
   }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(var(--clr-green));
+    text-shadow: 2px 2px 2px hsl(var(--clr-red));
+  }
 }

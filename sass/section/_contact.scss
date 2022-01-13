@@ -7,5 +7,32 @@
   &__form {
     flex-direction: column;
     width: 100%;
+    input,
+    textarea {
+      padding-left: 0.4rem;
+      padding-block: 0.2rem;
+      border-radius: 5px;
+      color: hsl(var(--clr-grey));
+      background: hsl(var(--clr-grey-light));
+      border: none;
+      &:focus {
+        outline: 2px solid hsl(var(--clr-red));
+      }
+    }
+    button {
+      margin: auto;
+      width: 200px;
+    }
   }
+}
+
+.alert {
+  color: hsl(var(--clr-green));
+  text-align: center;
+  display: none;
+  border: 2px solid hsl(var(--clr-green));
+  background: none;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  background: hsl(var(--clr-green), 0.2);
 }

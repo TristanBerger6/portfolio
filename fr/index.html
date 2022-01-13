@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="canonical" href="/fr"/>
+  <link rel="alternate" href="/fr"/>
+  <link rel="alternate" hreflang="en" href="/" >
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="../public/css/style.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <script src="http://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js"></script>
+  <script type='module' src="../js/firebase.js" async></script>
+  <script src="../js/index.js" async></script>
+  
+  <title>Tristan Berger</title>
+ </head>
+
+<body>
+  <div>
+    <a class="skip-to-content" href="#main">Skip to content</a>
+
+    <header class="primary-header flex ff-mono fs-300 text-grey-light ">
+      <div class="logo"><a href='/fr'>T</a></div>
+      <div class="flex" style="align-items: center;">
+      
+        <a href="/" aria-label="english website link"class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>EN</span></a>
+        <nav id="nav-bar" class="nav-bar flex" aria-expanded="false"> 
+          <div class="nav-bar__content flex">
+          <ol class="flex">
+            <li><a  class="link" href="#about"><span aria-hidden="true">01.</span> Profil </a></li>
+            <li><a  class="link" href="#skills"> <span aria-hidden="true">02.</span>  Compétences </a></li>
+            <li><a  class="link" href="#project"> <span aria-hidden="true">03.</span>  Projets </a></li>
+            <li><a  class="link" href="#contact"> <span aria-hidden="true">04.</span>  Contact </a></li>
+          </ol>
+          <button class="btn fw-700"> CV </button>
+        </div>
+        </nav>  
+        <button class="mobile-nav-toggle" aria-controls="nav-bar"  >
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+      
+      
+    </header>
+
+    <div class="content">
+    <main id="main">
+      <section class="hero section-container--hero flex">
+        <div class="hero__content">
+          <h1 class="ff-sans  text-white rubberband flex" aria-label="Hi, I'm Tristan ">
+            <div class="rubberband__line flex">
+              <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
+              <span aria-hidden="true" class='rubberband__item'>r</span>
+              <span aria-hidden="true" class='rubberband__item'>i</span>
+              <span aria-hidden="true" class='rubberband__item'>s</span>
+              <span aria-hidden="true" class='rubberband__item'>t</span>
+              <span aria-hidden="true" class='rubberband__item'>a</span>
+              <span aria-hidden="true" class='rubberband__item'>n</span>
+              <span aria-hidden="true" class='rubberband__item'>&nbsp</span>
+              <span aria-hidden="true" class='rubberband__item'>B</span>
+              <span aria-hidden="true" class='rubberband__item'>e</span>
+              <span aria-hidden="true" class='rubberband__item'>r</span>
+              <span aria-hidden="true" class='rubberband__item'>g</span>
+              <span aria-hidden="true" class='rubberband__item'>e</span>
+              <span aria-hidden="true" class='rubberband__item'>r</span>
+          </div>
+    
+  
+          </h1>
+          <p class="text-red fs-500 fw-400 ff-mono">développeur web autodidacte</p>
+        </div>
+        <canvas id="waves"></canvas>
+        <div class="scroll-down"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+        <div class="scroll-down scroll-down--left"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+      
+      <section id="about" class="about section-container">
+        <div class="about__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">01.</span>  Profil</h2>
+        <div class="about__content flex">
+          <div class="about__text fs-500 text-grey-light">
+            <p>Bonjour ! Je m'appelle Tristan Berger, je suis un ingénieur de 24 ans qui aspire à devenir un développeur full-stack.</p>
+            <p>J'ai un an d'expérience en tant qu'ingénieur en électronique, mais en septembre 2021, j'ai décidé de me lancer dans le développement web.
+               J'ai commencé en autodidacte, en suivant des cours en ligne et en créant mes propres projets.</p>
+              
+            <p>Je sens que le développement web fait partie de mon univers, je me sens à l'aise quand je développe, et surtout, j'aime ce que je fais.</p>
+          </div>
+          <div class="about__image"> <img  src='../public/img/profile_300px.jpg' alt='profile image'></div>
+        </div>
+      </div>
+     
+      </section>
+
+      <section id="skills" class="skills section-container">
+        <div class="skills__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">02.</span> Compétences </h2>
+        <div class="skills__content flex">
+          <div class="skills__text fs-500 text-grey-light">
+            <p>Depuis le début de mon parcours, j'utilise des ressources en ligne comme openClassrooms, Codeacademy etc... pour apprendre les langages du web,
+               mais j'ai aussi suivi des cours sur les fondamentaux du web, le SEO et l'accessibilité qui étaient des notions que je ne connaissais pas beaucoup.</p>
+            <p>J'avais l'habitude de développer en C/C++, cela a donc facilité l'apprentissage de HTML/CSS/JavaScript et React. </p>
+
+            <p>Pour développer mes compétences autant que possible, j'ai complété des challenges FrontendMentor, et j'ai réalisé quelques projets personnels. </p>
+          </div>
+          <div class="skills__logos grid"> 
+              <i class='fab fab fa-html5'></i>
+              <i class='fab fab fa-css3-alt'></i>
+              <i class='fab fab fa-js'></i>
+              <i class='fab fab fa-react'></i>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      <div class="scroll-down scroll-down--left"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+
+      <section id="project" class="project section-container">
+        <div class="project__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">03.</span>Mes projets</h2>
+        <div class="project__content flex">
+
+          <div class="project__item grid">
+            <div class="project__text">
+              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/"target="_blank"><h3 > Clone Netflix</h3></a>
+              <p class="project__text__description">Un clone de Netflix en react, permettant de voir les bandes-annonces et les informations importantes des films. Firebase est utilisé pour l'authentification, et les films sont tirés de l'API The Movie Database. 
+                Les utilisateurs peuvent filtrer les films par catégorie, mais aussi rechercher n'importe quel film disponible dans la base de données en utilisant la barre de recherche.
+              </p>
+              <ul class="project__text__tech ">
+                <li>SASS</li>
+                <li>React</li>
+                <li>API</li>
+                <li>Firebase</li>
+              </ul>
+              <div class="project__text__links links">
+                <a href="https://github.com/TristanBerger6/netflix-clone" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tristanberger6.github.io/netflix-clone/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+
+            </div>
+            <a class="project__image" href='https://tristanberger6.github.io/netflix-clone/' target="_blank" >
+              <img src="../public/img/netflix_700px.PNG" alt='netflix project preview'>
+            </a>
+          </div>
+
+          <div class="project__item grid">
+            <div class="project__text">
+              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/"target="_blank"><h3>Mini-jeu Clofus</h3></a>
+              <p class="project__text__description">Un mini-jeu codé en Javascript grandement inspiré du MMORPG Dofus.
+                Le jeu comprend une carte d'accueil dans laquelle l'utilisateur peut se déplacer librement grâce à l'implémentation de l'algorithme 
+                de pathfinding Dijkstra. 
+                Ensuite, l'utilisateur a accès à un combat tactique assez complexe. 
+                Afin d'obtenir un objet très puissant, il doit traverser un labyrinthe protégé par un monstre.
+              </p>
+              <ul class="project__text__tech ">
+                <li>SASS</li>
+                <li>JS</li>
+              </ul>
+              <div class="project__text__links links">
+                <a href="https://github.com/TristanBerger6/Dofus-like-game" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tristanberger6.github.io/Dofus-like-game/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+
+            </div>
+            <a class="project__image" href='https://tristanberger6.github.io/Dofus-like-game/' target="_blank" >
+              <img src="../public/img/clofus_700px.PNG" alt='clofus project preview'>
+            </a>
+          </div>
+
+          <div class="project__item grid">
+            <div class="project__text">
+              
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
+              <p class="project__text__description">Un défi proposé par Frontend Mentor. Le défi consistait à construire un site web de tourisme spatial
+                 de plusieurs pages et à le rendre aussi proche que possible du design. J'ai découvert la puissance des utility classes et des custom properties. 
+                Le site respecte les spécifications ARIA, est entièrement responsive et utilise JavaScript pour modifier dynamiquement le contenu.
+              </p>
+              <ul class="project__text__tech ">
+                <li>SASS</li>
+                <li>JS</li>
+                <li>Custom properties</li>
+                <li>Utility classes</li>
+              </ul>
+              <div class="project__text__links links">
+                <a href="https://github.com/TristanBerger6/FM_space_tourism" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tristanberger6.github.io/FM_space_tourism/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+
+            </div>
+            <a class="project__image" href='https://tristanberger6.github.io/FM_space_tourism/' target="_blank" >
+              <img src="../public/img/space_tourism_700px.PNG" alt='space tourism project preview'>
+            </a>
+          </div>
+
+          <div class="project__item grid">
+            <div class="project__text">
+              
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Traqueur d'IP</h3></a>
+              <p class="project__text__description">Un défi proposé par Frontend Mentor. Le défi consistait à créer une application de suivi des adresses IP et à 
+                faire en sorte qu'elle soit aussi proche que possible du design. L'application est construite avec react, utilise l'API de géolocalisation IP par IPify,
+                 et LeafletJS pour générer la carte. Les utilisateurs peuvent voir leur propre adresse IP au chargement initial de la page, et rechercher n'importe quelle 
+                 adresse IP ou n'importe quel domaine et voir sa localisation et quelques informations supplémentaires.
+
+              </p>
+              <ul class="project__text__tech ">
+                <li>SASS</li>
+                <li>JS</li>
+                <li>React</li>
+                <li>API</li>
+              </ul>
+              <div class="project__text__links links">
+                <a href="https://github.com/TristanBerger6/FM_ip-address-tracker" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tristanberger6.github.io/FM_ip-address-tracker/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+
+            </div>
+            <a class="project__image" href='https://tristanberger6.github.io/FM_ip-address-tracker/' target="_blank" >
+              <img src="../public/img/ip_700px.PNG" alt='ip tracker project preview'>
+            </a>
+          </div>
+
+
+        </div>
+        </div>
+        <div class="scroll-down"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+        <div class="scroll-down scroll-down--left"><p>scroll</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+      </section>
+
+      <section id="contact" class="contact section-container">
+        <div class="contact__wrapper">
+        <h2 class="section-title"><span aria-hidden="true">04.</span>Contactez-moi</h2>
+        <div class="contact__content flex">
+          <p class="ff-mono text-grey-light "><span>N'hésitez pas à me contacter, je vous répondrai  dans<br> les plus brefs délais.</span></p>
+          <form id="contactForm" class="contact__form flex" action="#" >
+            <div class='alert'> Votre message a bien été envoyé</div>
+            <label class="sr-only" for="name" >Nom</label>
+            <input id="name" type='text' placeholder="Nom" required>
+            <label class="sr-only" for="email" >Email</label>
+            <input id="email" type='email' placeholder="Email" required>
+            <label class="sr-only" for="message" >Message</label>
+            <textarea id="message"  placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class='btn ff-mono'>Envoyer</button>
+          </form>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class='section-container'>
+        <ul class="footer__links links flex">
+          <li><a href="https://github.com/TristanBerger6/" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tristan-berger-991798140/" aria-label="linkedin link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:tristan.berger6@gmail.com" aria-label="mail link" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class='text-grey-light ff-mono fs-500'>© 2022 Tristan Berger</p>
+      </div>
+
+    </footer>
+  </div>
+
+
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.footer {
+  & > .section-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__links {
+    justify-content: center;
+    margin-bottom: 0.2rem;
+  }
+}

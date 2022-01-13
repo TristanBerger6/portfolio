@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="canonical" href="/"/>
+  <link rel="alternate" href="/"/>
+  <link rel="alternate" hreflang="fr" href="./fr" >
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="./public/css/style.css" /> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
@@ -18,26 +23,30 @@
   <div>
     <a class="skip-to-content" href="#main">Skip to content</a>
 
-    <header class="primary-header flex ff-mono fs-300">
-      <a class="logo" href='/'>Tristan Berger</a>
-      <button class="mobile-nav-toggle" aria-controls="nav-bar"  >
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav id="nav-bar" class="nav-bar" aria-expanded="false"> 
-        <div class="nav-bar__content flex">
-        <ol class="flex">
-          <li><a  class="link" href="#about"><span aria-hidden="true">01.</span> About </a></li>
-          <li><a  class="link" href="#skills"> <span aria-hidden="true">02.</span>  Skills </a></li>
-          <li><a  class="link" href="#"> <span aria-hidden="true">03.</span>  Work </a></li>
-          <li><a  class="link" href="#"> <span aria-hidden="true">04.</span>  Contact </a></li>
-        </ol>
-        <button class="btn fw-700"> Resume </button>
-      </div>
-      </nav>  
+    <header class="primary-header flex ff-mono fs-300 text-grey-light ">
+      <div class="logo"><a href='/'>T</a></div>
+
+      <div class="flex" style="align-items: center;">
+        <a href="/fr" aria-label="french website link"class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>FR</span></a>
+        <nav id="nav-bar" class="nav-bar flex" aria-expanded="false"> 
+          <div class="nav-bar__content flex">
+          <ol class="flex">
+            <li><a  class="link" href="#about"><span aria-hidden="true">01.</span> About </a></li>
+            <li><a  class="link" href="#skills"> <span aria-hidden="true">02.</span>  Skills </a></li>
+            <li><a  class="link" href="#project"> <span aria-hidden="true">03.</span>  Work </a></li>
+            <li><a  class="link" href="#contact"> <span aria-hidden="true">04.</span>  Contact </a></li>
+          </ol>
+          <button class="btn fw-700"> Resume </button>
+        </div>
+        </nav> 
+        <button class="mobile-nav-toggle" aria-controls="nav-bar"  >
+          <span class="sr-only">Menu</span>
+        </button>
+      </div> 
     </header>
 
     <div class="content">
-    <main>
+    <main id="main">
       <section class="hero section-container--hero flex">
         <div class="hero__content">
           <h1 class="ff-sans  text-white rubberband flex" aria-label="Hi, I'm Tristan ">
@@ -50,6 +59,7 @@
             <span aria-hidden="true" class='rubberband__item'>I</span>
             <span aria-hidden="true" class='rubberband__item'>'</span>
             <span aria-hidden="true" class='rubberband__item'>m</span>
+            <span aria-hidden="true" class='rubberband__item'>&nbsp</span>
             <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
             <span aria-hidden="true" class='rubberband__item'>r</span>
             <span aria-hidden="true" class='rubberband__item'>i</span>
@@ -80,8 +90,7 @@
           <div class="about__image"> <img  src='./public/img/profile_300px.jpg' alt='profile image'></div>
         </div>
       </div>
-      <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-      <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
+     
       </section>
 
       <section id="skills" class="skills section-container">
@@ -116,7 +125,7 @@
           <div class="project__item grid">
             <div class="project__text">
               <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/"target="_blank"><h3 > Netflix Clone</h3></a>
-              <p class="project__text__description">A Netflix clone, allowing to see trailers and important information of the movies. Firebase is used for authentication, and the movies are taken from The Movie Database API. 
+              <p class="project__text__description">A Netflix clone built with react, allowing to see trailers and important information of the movies. Firebase is used for authentication, and the movies are taken from The Movie Database API. 
                 Users can filter movies by category, but also search for any movie available in the database using the search bar.
               </p>
               <ul class="project__text__tech ">
@@ -125,7 +134,7 @@
                 <li>API</li>
                 <li>Firebase</li>
               </ul>
-              <div class="project__text__links">
+              <div class="project__text__links links">
                 <a href="https://github.com/TristanBerger6/netflix-clone" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://tristanberger6.github.io/netflix-clone/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
@@ -148,14 +157,14 @@
                 <li>SASS</li>
                 <li>JS</li>
               </ul>
-              <div class="project__text__links">
+              <div class="project__text__links links">
                 <a href="https://github.com/TristanBerger6/Dofus-like-game" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://tristanberger6.github.io/Dofus-like-game/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
 
             </div>
             <a class="project__image" href='https://tristanberger6.github.io/Dofus-like-game/' target="_blank" >
-              <img src="./public/img/clofus_700px.PNG" alt='netflix project preview'>
+              <img src="./public/img/clofus_700px.PNG" alt='clofus project preview'>
             </a>
           </div>
 
@@ -164,7 +173,7 @@
               
               <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
               <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out a multi-page space tourism website and get it looking as close
-                to the design as possible. I discovered the power of utility classes as well as custom properties. The website follows ARIA specifications, is fully responsive, and uses JavaScript
+                to the design as possible. I discovered the power of utility classes and custom properties. The website follows ARIA specifications, is fully responsive, and uses JavaScript
                 to dynamically change the content.
               </p>
               <ul class="project__text__tech ">
@@ -173,24 +182,24 @@
                 <li>Custom properties</li>
                 <li>Utility classes</li>
               </ul>
-              <div class="project__text__links">
+              <div class="project__text__links links">
                 <a href="https://github.com/TristanBerger6/FM_space_tourism" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://tristanberger6.github.io/FM_space_tourism/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
 
             </div>
             <a class="project__image" href='https://tristanberger6.github.io/FM_space_tourism/' target="_blank" >
-              <img src="./public/img/space_tourism_700px.PNG" alt='netflix project preview'>
+              <img src="./public/img/space_tourism_700px.PNG" alt='space tourism project preview'>
             </a>
           </div>
 
           <div class="project__item grid">
             <div class="project__text">
               
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Ip address tracker</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >IP address tracker</h3></a>
               <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out an IP Address Tracker app and get it looking as close to the design as possible. 
                 The app is built with react, uses IP Geolocation API by IPify, and LeafletJS to generate the map. Users are able to see their own IP adress on initial page load, and search for any Ip addresses or domains
-                and see the key information and location about it.
+                and see its location and some additional information.
               </p>
               <ul class="project__text__tech ">
                 <li>SASS</li>
@@ -198,14 +207,14 @@
                 <li>React</li>
                 <li>API</li>
               </ul>
-              <div class="project__text__links">
+              <div class="project__text__links links">
                 <a href="https://github.com/TristanBerger6/FM_ip-address-tracker" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://tristanberger6.github.io/FM_ip-address-tracker/" aria-label="external link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
 
             </div>
             <a class="project__image" href='https://tristanberger6.github.io/FM_ip-address-tracker/' target="_blank" >
-              <img src="./public/img/ip_700px.PNG" alt='netflix project preview'>
+              <img src="./public/img/ip_700px.PNG" alt='ip tracker project preview'>
             </a>
           </div>
 
@@ -216,25 +225,37 @@
         <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
       </section>
 
-      <section id="constact" class="contact section-container">
+      <section id="contact" class="contact section-container">
         <div class="contact__wrapper">
         <h2 class="section-title"><span aria-hidden="true">04.</span>Contact me</h2>
         <div class="contact__content flex">
           <p class="ff-mono text-grey-light "><span>Feel free to contact me, I'll try my best to get back to you!</span></p>
           <form id="contactForm" class="contact__form flex" action="#" >
+            <div class='alert'> Your message has been sent</div>
             <label class="sr-only" for="name" >Name</label>
             <input id="name" type='text' placeholder="Name" required>
             <label class="sr-only" for="email" >Email</label>
             <input id="email" type='email' placeholder="Email" required>
             <label class="sr-only" for="message" >Message</label>
-            <input id="message" type='text' placeholder="Message" required>
-            <button type="submit" class='btn'>Send message</button>
+            <textarea id="message"  placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class='btn ff-mono'>Send message</button>
           </form>
         </div>
       </div>
       </section>
-
     </main>
+
+    <footer class="footer">
+      <div class='section-container'>
+        <ul class="footer__links links flex">
+          <li><a href="https://github.com/TristanBerger6/" aria-label="github link" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tristan-berger-991798140/" aria-label="linkedin link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:tristan.berger6@gmail.com" aria-label="mail link" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class='text-grey-light ff-mono fs-500'>© 2022 Tristan Berger</p>
+      </div>
+
+    </footer>
   </div>
 
 

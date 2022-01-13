@@ -32,7 +32,6 @@
   font-size: var(--fs-rubber);
   font-weight: 700;
   &__major {
-    margin-left: calc(0.3 * var(--fs-rubber));
     color: hsl(var(--clr-green));
     text-shadow: 2px 2px 2px hsl(var(--clr-red));
   }
