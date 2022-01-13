@@ -10,18 +10,7 @@ import {
 } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: 'AIzaSyDoMjy7bPU0z4YQYW9XVxkVk1mrvyaznUk',
-  authDomain: 'portfolio-9cbf7.firebaseapp.com',
-  projectId: 'portfolio-9cbf7',
-  storageBucket: 'portfolio-9cbf7.appspot.com',
-  messagingSenderId: '619961494651',
-  appId: '1:619961494651:web:008d2b896e0bc226a4c6de',
-  databaseURL:
-    'https://portfolio-9cbf7-default-rtdb.europe-west1.firebasedatabase.app/',
-};
+import { firebaseConfig } from './firebase_config.js';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
