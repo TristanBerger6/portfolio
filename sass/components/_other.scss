@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: center;
     i {
-      transition: color 200ms ease-in-out;
+      transition: var(--transition);
     }
     &:hover,
     &:focus {
@@ -75,4 +75,15 @@
     font-size: 1.8rem;
     color: hsl(var(--clr-grey-light));
   }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }

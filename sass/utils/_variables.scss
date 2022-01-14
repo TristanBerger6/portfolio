@@ -29,6 +29,8 @@ $screen-xxl-min: 1500px;
   /* font-families */
   --ff-mono: 'SF Mono Regular', serif;
   --ff-sans: 'open sans', sans-serif;
+
+  --transition: all 0.25s ease;
 }
 
 @media (min-width: $screen-sm-min) {

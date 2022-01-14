@@ -2,7 +2,7 @@
 var waves = new SineWaves({
   el: document.getElementById('waves'),
 
-  speed: 4,
+  speed: 2,
 
   rotate: 0,
 
@@ -95,7 +95,7 @@ window.addEventListener('resize', () => {
 });
 
 // mobile nav bar hamburger
-eltMobNavToggle.addEventListener('click', () => {
+function handleHamburgerClick() {
   let ariaExpended = eltNavBar.getAttribute('aria-expanded');
   let mobile = eltNavBar.classList.contains('mobile');
   if (ariaExpended == 'false' && mobile) {
@@ -109,11 +109,13 @@ eltMobNavToggle.addEventListener('click', () => {
     eltContent.classList.remove('blur');
     document.body.style.overflowY = 'auto';
   }
-});
+}
+eltMobNavToggle.addEventListener('click', handleHamburgerClick);
 
 //link
 for (item of eltLinks) {
   item.addEventListener('click', (e) => {
+    handleHamburgerClick();
     for (item of eltLinks) {
       item.classList.remove('active');
     }
@@ -167,3 +169,19 @@ setTimeout(() => {
     }, i * 150);
   }
 }, 1100);
+
+// ------------------ section fade in ----------------------------------------------//
+
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 0.3 * windowHeight;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', reveal);

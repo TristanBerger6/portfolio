@@ -44,7 +44,7 @@
   color: hsl(var(--clr-red));
   display: grid;
   border: none;
-  background: hsl(var(--clr-grey));
+  background: none;
   border-radius: 4px;
   padding: 0.4rem 1rem;
   &::after {
@@ -73,14 +73,14 @@
     z-index: -1;
     border-radius: inherit;
     background: hsl(var(--clr-grey));
+    transition: var(--transition);
   }
   &:hover,
   &:focus {
-    background: linear-gradient(
-      to right,
-      hsl(var(--clr-red), 0.2),
-      hsl(var(--clr-green), 0.2)
-    );
+    &:before {
+      background: hsl(var(--clr-grey), 0.9);
+    }
+
     outline: none;
   }
 }

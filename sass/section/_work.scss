@@ -23,7 +23,7 @@
       color: hsl(var(--clr-grey-light));
       width: fit-content;
       h3 {
-        transition: color 200ms ease-in-out;
+        transition: var(--transition);
       }
       &:hover,
       &:focus {
@@ -93,7 +93,7 @@
       grid-area: 1/6/-1/-1;
       opacity: 0.6;
       z-index: 0;
-      transition: opacity 100ms ease-in-out;
+      transition: var(--transition);
       &:hover {
         opacity: 1;
       }

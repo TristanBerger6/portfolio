@@ -5,4 +5,10 @@
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: hsl(var(--clr-red));
+    outline: none;
+  }
 }
