@@ -10,7 +10,11 @@ import {
 } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { firebaseConfig } from './firebase_config.js';
+
+const firebaseConfig = {
+  databaseURL:
+    'https://portfolio-9cbf7-default-rtdb.europe-west1.firebasedatabase.app/',
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
