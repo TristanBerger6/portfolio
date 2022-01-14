@@ -27,7 +27,7 @@
       <a href='/' class="logo">T</a>
 
       <div class="flex" style="align-items: center;">
-        <a href="/fr" aria-label="french website link"class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>FR</span></a>
+        <a href="/fr" aria-label="french website link" class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>FR</span></a>
         <nav id="nav-bar" class="nav-bar flex" aria-expanded="false"> 
           <div class="nav-bar__content flex">
           <ol class="flex">
@@ -49,7 +49,8 @@
     <main id="main">
       <section class="hero section-container--hero flex">
         <div class="hero__content">
-          <h1 class="ff-sans  text-white rubberband flex" aria-label="Hi, I'm Tristan ">
+          <h1 class="sr-only">Hi, I'm Tristan </h1>
+          <div class="ff-sans text-white rubberband flex" aria-hidden="true">
             <div class="rubberband__line flex">
             <span aria-hidden="true" class='rubberband__item'>H</span>
             <span aria-hidden="true" class='rubberband__item'>i</span>
@@ -59,7 +60,7 @@
             <span aria-hidden="true" class='rubberband__item'>I</span>
             <span aria-hidden="true" class='rubberband__item'>'</span>
             <span aria-hidden="true" class='rubberband__item'>m</span>
-            <span aria-hidden="true" class='rubberband__item'>&nbsp</span>
+            <span aria-hidden="true" class='rubberband__item'>&nbsp;</span>
             <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
             <span aria-hidden="true" class='rubberband__item'>r</span>
             <span aria-hidden="true" class='rubberband__item'>i</span>
@@ -68,7 +69,7 @@
             <span aria-hidden="true" class='rubberband__item'>a</span>
             <span aria-hidden="true" class='rubberband__item'>n</span>
           </div>
-          </h1>
+        </div>
           <p class="text-red fs-500 fw-400 ff-mono"> a self-taught web developer</p>
         </div>
         <canvas id="waves"></canvas>
@@ -124,7 +125,7 @@
 
           <div class="project__item grid reveal">
             <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/"target="_blank"><h3 > Netflix Clone</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/" target="_blank"><h3 > Netflix Clone</h3></a>
               <p class="project__text__description">A Netflix clone built with react, allowing to see trailers and important information of the movies. Firebase is used for authentication, and the movies are taken from The Movie Database API. 
                 Users can filter movies by category, but also search for any movie available in the database using the search bar.
               </p>
@@ -147,7 +148,7 @@
 
           <div class="project__item grid reveal">
             <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/"target="_blank"><h3 >Clofus mini-game</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/" target="_blank"><h3 >Clofus mini-game</h3></a>
               <p class="project__text__description">A Javascript coded mini-game greatly inspired by the MMORPG Dofus.
                 The game includes a home map in which the user can move freely thanks to the implementation of Dijkstra pathfinding algorithm . 
                 Then, the user has access to a tactical battle quite complex. 
@@ -171,7 +172,7 @@
           <div class="project__item grid reveal">
             <div class="project__text">
               
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/" target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
               <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out a multi-page space tourism website and get it looking as close
                 to the design as possible. I discovered the power of utility classes and custom properties. The website follows ARIA specifications, is fully responsive, and uses JavaScript
                 to dynamically change the content.
@@ -196,7 +197,7 @@
           <div class="project__item grid reveal">
             <div class="project__text">
               
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >IP address tracker</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/" target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >IP address tracker</h3></a>
               <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out an IP Address Tracker app and get it looking as close to the design as possible. 
                 The app is built with react, uses IP Geolocation API by IPify, and LeafletJS to generate the map. Users are able to see their own IP adress on initial page load, and search for any Ip addresses or domains
                 and see its location and some additional information.

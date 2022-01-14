@@ -598,7 +598,7 @@ html {
   position: relative;
   bottom: 3rem;
 }
-.hero__content h1 {
+.hero__content > div {
   line-height: 1.1;
   cursor: default;
   flex-direction: column;

@@ -7,7 +7,7 @@
   &__content {
     position: relative;
     bottom: 3rem;
-    h1 {
+    & > div {
       line-height: 1.1;
       cursor: default;
       flex-direction: column;
@@ -31,6 +31,7 @@
   --fs-rubber: var(--fs-800);
   font-size: var(--fs-rubber);
   font-weight: 700;
+
   &__major {
     color: hsl(var(--clr-green));
     text-shadow: 2px 2px 2px hsl(var(--clr-red));

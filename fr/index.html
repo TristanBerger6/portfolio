@@ -27,7 +27,7 @@
       <a href='/fr' class="logo">T</a>
       <div class="flex" style="align-items: center;">
       
-        <a href="/" aria-label="english website link"class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>EN</span></a>
+        <a href="/" aria-label="english website link" class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>EN</span></a>
         <nav id="nav-bar" class="nav-bar flex" aria-expanded="false"> 
           <div class="nav-bar__content flex">
           <ol class="flex">
@@ -51,7 +51,8 @@
     <main id="main">
       <section class="hero section-container--hero flex">
         <div class="hero__content">
-          <h1 class="ff-sans  text-white rubberband flex" aria-label="Hi, I'm Tristan ">
+          <h1 class="sr-only" > Tristan Berger</h1>
+          <div class="ff-sans  text-white rubberband flex" aria-hidden="true">
             <div class="rubberband__line flex">
               <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
               <span aria-hidden="true" class='rubberband__item'>r</span>
@@ -60,7 +61,7 @@
               <span aria-hidden="true" class='rubberband__item'>t</span>
               <span aria-hidden="true" class='rubberband__item'>a</span>
               <span aria-hidden="true" class='rubberband__item'>n</span>
-              <span aria-hidden="true" class='rubberband__item'>&nbsp</span>
+              <span aria-hidden="true" class='rubberband__item'>&nbsp;</span>
               <span aria-hidden="true" class='rubberband__item'>B</span>
               <span aria-hidden="true" class='rubberband__item'>e</span>
               <span aria-hidden="true" class='rubberband__item'>r</span>
@@ -68,9 +69,7 @@
               <span aria-hidden="true" class='rubberband__item'>e</span>
               <span aria-hidden="true" class='rubberband__item'>r</span>
           </div>
-    
-  
-          </h1>
+        </div>
           <p class="text-red fs-500 fw-400 ff-mono">développeur web autodidacte</p>
         </div>
         <canvas id="waves"></canvas>
@@ -125,7 +124,7 @@
 
           <div class="project__item grid reveal">
             <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/"target="_blank"><h3 > Clone Netflix</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/" target="_blank"><h3 > Clone Netflix</h3></a>
               <p class="project__text__description">Un clone de Netflix en react, permettant de voir les bandes-annonces et les informations importantes des films. Firebase est utilisé pour l'authentification, et les films sont tirés de l'API The Movie Database. 
                 Les utilisateurs peuvent filtrer les films par catégorie, mais aussi rechercher n'importe quel film disponible dans la base de données en utilisant la barre de recherche.
               </p>
@@ -148,7 +147,7 @@
 
           <div class="project__item grid reveal">
             <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/"target="_blank"><h3>Mini-jeu Clofus</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/" target="_blank"><h3>Mini-jeu Clofus</h3></a>
               <p class="project__text__description">Un mini-jeu codé en Javascript grandement inspiré du MMORPG Dofus.
                 Le jeu comprend une carte d'accueil dans laquelle l'utilisateur peut se déplacer librement grâce à l'implémentation de l'algorithme 
                 de pathfinding Dijkstra. 
@@ -173,7 +172,7 @@
           <div class="project__item grid reveal">
             <div class="project__text">
               
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/" target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
               <p class="project__text__description">Un défi proposé par Frontend Mentor. Le défi consistait à construire un site web de tourisme spatial
                  de plusieurs pages et à le rendre aussi proche que possible du design. J'ai découvert la puissance des utility classes et des custom properties. 
                 Le site respecte les spécifications ARIA, est entièrement responsive et utilise JavaScript pour modifier dynamiquement le contenu.
@@ -198,7 +197,7 @@
           <div class="project__item grid reveal">
             <div class="project__text">
               
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/"target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Traqueur d'IP</h3></a>
+              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/" target="_blank"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Traqueur d'IP</h3></a>
               <p class="project__text__description">Un défi proposé par Frontend Mentor. Le défi consistait à créer une application de suivi des adresses IP et à 
                 faire en sorte qu'elle soit aussi proche que possible du design. L'application est construite avec react, utilise l'API de géolocalisation IP par IPify,
                  et LeafletJS pour générer la carte. Les utilisateurs peuvent voir leur propre adresse IP au chargement initial de la page, et rechercher n'importe quelle 
