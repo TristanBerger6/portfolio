@@ -621,6 +621,11 @@ html {
   font-size: var(--fs-rubber);
   font-weight: 700;
 }
+@media (max-width: 390px) {
+  .rubberband {
+    --fs-rubber: 2.5rem;
+  }
+}
 .rubberband__major {
   color: hsl(var(--clr-green));
   text-shadow: 2px 2px 2px hsl(var(--clr-red));
