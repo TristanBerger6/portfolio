@@ -871,7 +871,7 @@ html {
     z-index: 0;
     transition: var(--transition);
   }
-  .project__image:hover {
+  .project__image:hover, .project__image:focus {
     opacity: 1;
   }
 }
