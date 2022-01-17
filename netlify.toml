@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/"
+  to = "/fr"
+  status = 302
+  force = true
+  conditions = {Country = "fr", Language = "fr"}
