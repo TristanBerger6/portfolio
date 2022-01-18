@@ -3,4 +3,4 @@
   to = "/fr/"
   status = 302
   force = true
-  conditions = {Language = "fr-FR"}
+  conditions = {Country = "fr"}
