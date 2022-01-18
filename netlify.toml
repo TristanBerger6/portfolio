@@ -2,5 +2,5 @@
   from = "/"
   to = "/fr/"
   status = 302
-  force = true
+  force = false
   conditions = {Country = "fr"}
