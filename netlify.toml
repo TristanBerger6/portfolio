@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/"
   to = "/fr/"
-  status = 200
+  status = 301
   force = true
   conditions = {Country = "fr"}
 
@@ -9,7 +9,7 @@
 [[redirects]]
   from = "/"
   to = "/en/"
-  status = 200
+  status = 301
   force = true
 
 
