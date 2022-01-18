@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/"
-  to = "/fr/index.html"
-  status = 200
+  to = "/fr/"
+  status = 302
   force = true
-  conditions = {Country = ["fr"], Language = ["fr"]}
+  conditions = {Language = ["fr"]}
