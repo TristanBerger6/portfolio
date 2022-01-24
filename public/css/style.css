@@ -889,6 +889,9 @@ html {
   align-items: center;
   margin-top: 2rem;
 }
+.contact__content p {
+  max-width: 55ch;
+}
 .contact__form {
   flex-direction: column;
   width: 100%;

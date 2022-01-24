@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    p {
+      max-width: 55ch;
+    }
   }
   &__form {
     flex-direction: column;
