@@ -1,320 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="canonical" href="https://tristan-berger.com/en/"/>
-  <link rel="alternate" hreflang="x-default" href="https://tristan-berger.com/en/"/>
-  <link rel="alternate" hreflang="en" href="https://tristan-berger.com/en/"/>
-  <link rel="alternate" hreflang="fr" href="https://tristan-berger.com/fr/" >
+    <link rel="canonical" href="https://tristan-berger.com/en/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://tristan-berger.com/en/"
+    />
+    <link rel="alternate" hreflang="en" href="https://tristan-berger.com/en/" />
+    <link rel="alternate" hreflang="fr" href="https://tristan-berger.com/fr/" />
 
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="stylesheet" href="../public/css/style.css" /> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-  <script src="https://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js" defer></script>
-  <script type='module' src="../js/firebase.js" async></script>
-  <script src="../js/index.js" defer></script>
-  
-  <title>Tristan Berger | Web Developer</title>
-  <meta name="description" content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer">
-  <meta name="robots" content="index,follow">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Tristan Berger | Web Developer">
-  <meta property="og:description" content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer">
-  <meta property="og:url" content="https://tristan-berger.com/en/">
-  <meta property="og:image" content="https://tristan-berger.com/public/img/profile_300px.jpg">
+    <script
+      src="https://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js"
+      defer
+    ></script>
+    <script type="module" src="../js/firebase.js" async></script>
+    <script src="../js/index.js" defer></script>
 
-  <meta name=”twitter:card” content="summary" />
-  <meta name=”twitter:site” content="https://tristan-berger.com/en/" />
-  <meta name=”twitter:title” content="Tristan Berger | Web Developer" />
-  <meta name=”twitter:description” content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer" />
-  <meta name=”twitter:image” content=”https://tristan-berger.com/public/img/profile_300px.jpg” />
+    <title>Tristan Berger | Web Developer</title>
+    <meta
+      name="description"
+      content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer"
+    />
+    <meta name="robots" content="index,follow" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT6L9P9DCY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Tristan Berger | Web Developer" />
+    <meta
+      property="og:description"
+      content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer"
+    />
+    <meta property="og:url" content="https://tristan-berger.com/en/" />
+    <meta
+      property="og:image"
+      content="https://tristan-berger.com/public/img/profile_300px.jpg"
+    />
 
-    gtag('config', 'G-QT6L9P9DCY');
-  </script>
+    <meta name="”twitter:card”" content="summary" />
+    <meta name="”twitter:site”" content="https://tristan-berger.com/en/" />
+    <meta name="”twitter:title”" content="Tristan Berger | Web Developer" />
+    <meta
+      name="”twitter:description”"
+      content="Tristan Berger's Portfolio. Self-taught web developper, former electronics engineer aspiring to become a full stack developer"
+    />
+    <meta name=”twitter:image”
+    content=”https://tristan-berger.com/public/img/profile_300px.jpg” />
 
- </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QT6L9P9DCY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<body>
-  <div>
-    <a class="skip-to-content" href="#main">Skip to content</a>
+      gtag('config', 'G-QT6L9P9DCY');
+    </script>
+  </head>
 
-    <header class="primary-header flex ff-mono fs-300 text-grey-light ">
-      <a href='/en' class="logo">T</a>
+  <body>
+    <div>
+      <a class="skip-to-content" href="#main">Skip to content</a>
 
-      <div class="flex" style="align-items: center;">
-         <a href="/fr" aria-label="french website link" class="languageSelector flex " ><i class="fas fa-globe-europe"></i><span>FR</span></a>
-        <nav id="nav-bar" class="nav-bar flex" aria-expanded="false"> 
-          <div class="nav-bar__content flex">
-          <ol class="flex">
-            <li><a  class="link" href="#about"><span aria-hidden="true">01.</span> About </a></li>
-            <li><a  class="link" href="#skills"> <span aria-hidden="true">02.</span>  Skills </a></li>
-            <li><a  class="link" href="#project"> <span aria-hidden="true">03.</span>  Work </a></li>
-            <li><a  class="link" href="#contact"> <span aria-hidden="true">04.</span>  Contact </a></li>
-          </ol>
-          <a class="btn fw-700" href="../public/Resume_BERGER_Tristan.pdf" target="_blank"> Resume </a>
+      <header class="primary-header flex ff-mono fs-300 text-grey-light">
+        <a href="/en" class="logo">T</a>
+
+        <div class="flex" style="align-items: center">
+          <a
+            href="/fr"
+            aria-label="french website link"
+            class="languageSelector flex"
+            ><i class="fas fa-globe-europe"></i><span>FR</span></a
+          >
+          <nav id="nav-bar" class="nav-bar flex" aria-expanded="false">
+            <div class="nav-bar__content flex">
+              <ol class="flex">
+                <li>
+                  <a class="link" href="#about"
+                    ><span aria-hidden="true">01.</span> About
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#skills">
+                    <span aria-hidden="true">02.</span> Skills
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#project">
+                    <span aria-hidden="true">03.</span> Work
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#contact">
+                    <span aria-hidden="true">04.</span> Contact
+                  </a>
+                </li>
+              </ol>
+              <a
+                class="btn fw-700"
+                href="../public/Resume_BERGER_Tristan.pdf"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </div>
+          </nav>
+          <button class="mobile-nav-toggle" aria-controls="nav-bar">
+            <span class="sr-only">Menu</span>
+          </button>
         </div>
-        </nav> 
-        <button class="mobile-nav-toggle" aria-controls="nav-bar"  >
-          <span class="sr-only">Menu</span>
-        </button>
-      </div> 
-    </header>
+      </header>
 
-    <div class="content">
-    <main id="main">
-      <section class="hero section-container--hero flex">
-        <div class="hero__content">
-          <h1 class="sr-only">Hi, I'm Tristan </h1>
-          <div class="ff-sans text-white rubberband flex" aria-hidden="true">
-            <div class="rubberband__line flex">
-            <span aria-hidden="true" class='rubberband__item'>H</span>
-            <span aria-hidden="true" class='rubberband__item'>i</span>
-            <span aria-hidden="true" class='rubberband__item'>,</span>
+      <div class="content">
+        <main id="main">
+          <section class="hero section-container--hero flex">
+            <div class="hero__content">
+              <h1 class="sr-only">Hi, I'm Tristan</h1>
+              <div
+                class="ff-sans text-white rubberband flex"
+                aria-hidden="true"
+              >
+                <div class="rubberband__line flex">
+                  <span aria-hidden="true" class="rubberband__item">H</span>
+                  <span aria-hidden="true" class="rubberband__item">i</span>
+                  <span aria-hidden="true" class="rubberband__item">,</span>
+                </div>
+                <div class="rubberband__line flex">
+                  <span aria-hidden="true" class="rubberband__item">I</span>
+                  <span aria-hidden="true" class="rubberband__item">'</span>
+                  <span aria-hidden="true" class="rubberband__item">m</span>
+                  <span aria-hidden="true" class="rubberband__item"
+                    >&nbsp;</span
+                  >
+                  <span
+                    aria-hidden="true"
+                    class="rubberband__major rubberband__item"
+                    >T</span
+                  >
+                  <span aria-hidden="true" class="rubberband__item">r</span>
+                  <span aria-hidden="true" class="rubberband__item">i</span>
+                  <span aria-hidden="true" class="rubberband__item">s</span>
+                  <span aria-hidden="true" class="rubberband__item">t</span>
+                  <span aria-hidden="true" class="rubberband__item">a</span>
+                  <span aria-hidden="true" class="rubberband__item">n</span>
+                </div>
+              </div>
+              <p class="text-red fs-500 fw-400 ff-mono">
+                a self-taught web developer
+              </p>
+            </div>
+            <canvas id="waves"></canvas>
+            <div class="scroll-down">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+            <div class="scroll-down scroll-down--left">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <section id="about" class="about section-container reveal">
+            <div class="about__wrapper">
+              <h2 class="section-title">
+                <span aria-hidden="true">01.</span> About me
+              </h2>
+              <div class="about__content flex">
+                <div class="about__text fs-500 text-grey-light">
+                  <p>
+                    Hello ! My name is Tristan Berger, I'm a 24 years old
+                    engineer aspiring to become a full-stack developer.
+                  </p>
+                  <p>
+                    I have one year of experience as an electronic engineer, but
+                    I decided in September 2021 to jump into the world of web
+                    development. I started this journey by myself following
+                    online courses and creating my own projects.
+                  </p>
+
+                  <p>
+                    I chose to embark on this reconversion because I have always
+                    loved coding, I feel like web development fits for me and
+                    that it is an environment in which I will flourish. I feel
+                    comfortable when I develop and I am extremely motivated to
+                    learn and progress to one day excel in this field.
+                  </p>
+                </div>
+                <div class="about__image">
+                  <img
+                    src="../public/img/profile_300px.webp"
+                    alt="profile pic"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills" class="skills section-container reveal">
+            <div class="skills__wrapper">
+              <h2 class="section-title">
+                <span aria-hidden="true">02.</span> My Skills
+              </h2>
+              <div class="skills__content flex">
+                <div class="skills__text fs-500 text-grey-light">
+                  <p>
+                    Since the beginning of my journey, I use online resources
+                    such as openClassrooms, Codecademy etc.. to learn languages
+                    of the web, but I also followed courses about web
+                    fundamentals, SEO and accessibility which were notions I
+                    didn’t know much about.
+                  </p>
+                  <p>
+                    My past experiences allowed me to have a solid fundation in
+                    programming, so it made it a bit easier to learn
+                    HTML/CSS/JS/React and PHP.
+                  </p>
+
+                  <p>
+                    To develop my skills as much as possible, i’ve completed
+                    FrontendMentor challenges, and I've made some personal
+                    projects.
+                  </p>
+                </div>
+                <div class="skills__logos grid">
+                  <i class="fab fab fa-sass"></i>
+                  <i class="fab fab fa-php"></i>
+                  <i class="fab fab fa-js"></i>
+                  <i class="fab fab fa-react"></i>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-down">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+            <div class="scroll-down scroll-down--left">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <section id="project" class="project section-container">
+            <div class="project__wrapper">
+              <h2 class="section-title reveal">
+                <span aria-hidden="true">03.</span> Some projects
+              </h2>
+              <div class="project__content flex">
+                <div class="project__item grid reveal">
+                  <div class="project__text">
+                    <a
+                      class="project__text__title"
+                      href="https://tbtweet.go.yj.fr"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><h3>Twitter Clone</h3></a
+                    >
+                    <p class="project__text__description">
+                      A clone of the social network Twitter in PHP. The user has
+                      access to many twitter features (tweet, retweet, like,
+                      follow, quotes, mentions notifications etc...). This
+                      project is a real challenge because of its complexity, but
+                      also because it is my first experience with PHP. I decided
+                      not to use a framework in order to get familiar with this
+                      new language.
+                    </p>
+                    <ul class="project__text__tech">
+                      <li>SASS</li>
+                      <li>JS</li>
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                      <li>MVC architecture</li>
+                    </ul>
+                    <div class="project__text__links links">
+                      <a
+                        title="Github"
+                        href="https://github.com/TristanBerger6/Twitter-clone"
+                        aria-label="twitter github link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        title="External Link"
+                        href="https://tbtweet.go.yj.fr"
+                        aria-label="twitter external link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <a
+                    class="project__image"
+                    href="https://tbtweet.go.yj.fr"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../public/img/twitter_700px.webp"
+                      alt="clofus project preview"
+                    />
+                  </a>
+                </div>
+
+                <div class="project__item grid reveal">
+                  <div class="project__text">
+                    <a
+                      class="project__text__title"
+                      href="https://tristanberger6.github.io/netflix-clone/"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><h3>Netflix Clone</h3></a
+                    >
+                    <p class="project__text__description">
+                      A Netflix clone built with react, allowing to see trailers
+                      and important information of the movies. Firebase is used
+                      for authentication, and the movies are taken from The
+                      Movie Database API. Users can filter movies by category,
+                      but also search for any movie available in the database
+                      using the search bar.
+                    </p>
+                    <ul class="project__text__tech">
+                      <li>SASS</li>
+                      <li>React</li>
+                      <li>API</li>
+                      <li>Firebase</li>
+                    </ul>
+                    <div class="project__text__links links">
+                      <a
+                        title="Github"
+                        href="https://github.com/TristanBerger6/netflix-clone"
+                        aria-label="netflix github link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        title="External Link"
+                        href="https://tristanberger6.github.io/netflix-clone/"
+                        aria-label="netflix external link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <a
+                    class="project__image"
+                    href="https://tristanberger6.github.io/netflix-clone/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../public/img/netflix_700px.webp"
+                      alt="netflix project preview"
+                    />
+                  </a>
+                </div>
+
+                <div class="project__item grid reveal">
+                  <div class="project__text">
+                    <a
+                      class="project__text__title"
+                      href="https://tristanberger6.github.io/Dofus-like-game/"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><h3>Clofus mini-game</h3></a
+                    >
+                    <p class="project__text__description">
+                      A Javascript coded mini-game greatly inspired by the
+                      MMORPG Dofus. The game includes a home map in which the
+                      user can move freely thanks to the implementation of
+                      Dijkstra pathfinding algorithm . Then, the user has access
+                      to a tactical battle quite complex. In order to obtain a
+                      very powerful object, he has to cross a labyrinth
+                      protected by a monster.
+                    </p>
+                    <ul class="project__text__tech">
+                      <li>SASS</li>
+                      <li>JS</li>
+                    </ul>
+                    <div class="project__text__links links">
+                      <a
+                        title="Github"
+                        href="https://github.com/TristanBerger6/Dofus-like-game"
+                        aria-label="clofus github link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        title="External Link"
+                        href="https://tristanberger6.github.io/Dofus-like-game/"
+                        aria-label="clofus external link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <a
+                    class="project__image"
+                    href="https://tristanberger6.github.io/Dofus-like-game/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../public/img/clofus_700px.webp"
+                      alt="clofus project preview"
+                    />
+                  </a>
+                </div>
+
+                <div class="project__item grid reveal">
+                  <div class="project__text">
+                    <a
+                      class="project__text__title"
+                      href="https://tristanberger6.github.io/FM_space_tourism/"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><p class="ff-mono fs-400 text-green">
+                        FrontendMentor Challenge
+                      </p>
+                      <h3>Space tourism</h3></a
+                    >
+                    <p class="project__text__description">
+                      A challenge proposed by Frontend Mentor. The challenge was
+                      to build out a multi-page space tourism website and get it
+                      looking as close to the design as possible. I discovered
+                      the power of utility classes and custom properties. The
+                      website follows ARIA specifications, is fully responsive,
+                      and uses JavaScript to dynamically change the content.
+                    </p>
+                    <ul class="project__text__tech">
+                      <li>SASS</li>
+                      <li>JS</li>
+                      <li>Custom properties</li>
+                      <li>Utility classes</li>
+                    </ul>
+                    <div class="project__text__links links">
+                      <a
+                        title="Github"
+                        href="https://github.com/TristanBerger6/FM_space_tourism"
+                        aria-label="space tourism github link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        title="External Link"
+                        href="https://tristanberger6.github.io/FM_space_tourism/"
+                        aria-label="space tourism external link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <a
+                    class="project__image"
+                    href="https://tristanberger6.github.io/FM_space_tourism/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../public/img/space_tourism_700px.webp"
+                      alt="space tourism project preview"
+                    />
+                  </a>
+                </div>
+
+                <div class="project__item grid reveal">
+                  <div class="project__text">
+                    <a
+                      class="project__text__title"
+                      href="https://tristan-berger.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><h3>Portfolio</h3></a
+                    >
+                    <p class="project__text__description">
+                      The website on which you are currently, realized without
+                      framework, in English and French, with redirection
+                      according to the country of the user. This website is
+                      fully accessible, it follows ARIA specifications and is
+                      optimized for SEO (tested with lighthouse). Firebase is
+                      used for the back-end, its realtime database to store
+                      datas from the contact form, as well as the cloud
+                      functions to send me an email when modifying the database
+                      ( nodemailer with OAuth2.0 protocol ).
+                    </p>
+                    <ul class="project__text__tech">
+                      <li>SASS</li>
+                      <li>JS</li>
+                      <li>Firebase</li>
+                    </ul>
+                    <div class="project__text__links links">
+                      <a
+                        title="Github"
+                        href="https://github.com/TristanBerger6/portfolio"
+                        aria-label="ip tracker github link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        title="External Link"
+                        href="https://tristan-berger.com/"
+                        aria-label="ip tracker external link"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <a
+                    class="project__image"
+                    href="https://tristan-berger.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../public/img/portfolio.webp"
+                      alt="portfolio project preview"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-down">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+            <div class="scroll-down scroll-down--left">
+              <p>scroll down</p>
+              <div class="scroll-down__arrow" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <section id="contact" class="contact section-container reveal">
+            <div class="contact__wrapper">
+              <h2 class="section-title">
+                <span aria-hidden="true">04.</span>Contact me
+              </h2>
+              <div class="contact__content flex">
+                <p class="ff-mono text-grey-light">
+                  <span>
+                    Currently open to work, feel free to contact me !</span
+                  >
+                </p>
+                <form id="contactForm" class="contact__form flex" action="#">
+                  <div class="alert">Your message has been sent</div>
+                  <label class="sr-only" for="name">Name</label>
+                  <input id="name" type="text" placeholder="Name" required />
+                  <label class="sr-only" for="email">Email</label>
+                  <input id="email" type="email" placeholder="Email" required />
+                  <label class="sr-only" for="message">Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="Message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn ff-mono">
+                    Send message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="section-container">
+            <ul class="footer__links links flex">
+              <li>
+                <a
+                  title="Github Profile"
+                  href="https://github.com/TristanBerger6/"
+                  aria-label="profile github link"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  title="Linkedin Profile"
+                  href="https://www.linkedin.com/in/tristan-berger-991798140/"
+                  aria-label="profile linkedin link"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  title="Email"
+                  href="mailto:tristan.berger6@gmail.com"
+                  aria-label="mail link"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <p class="text-grey-light ff-mono fs-500">© 2022 Tristan Berger</p>
           </div>
-          <div class="rubberband__line flex">
-            <span aria-hidden="true" class='rubberband__item'>I</span>
-            <span aria-hidden="true" class='rubberband__item'>'</span>
-            <span aria-hidden="true" class='rubberband__item'>m</span>
-            <span aria-hidden="true" class='rubberband__item'>&nbsp;</span>
-            <span aria-hidden="true" class="rubberband__major rubberband__item">T</span>
-            <span aria-hidden="true" class='rubberband__item'>r</span>
-            <span aria-hidden="true" class='rubberband__item'>i</span>
-            <span aria-hidden="true" class='rubberband__item'>s</span>
-            <span aria-hidden="true" class='rubberband__item'>t</span>
-            <span aria-hidden="true" class='rubberband__item'>a</span>
-            <span aria-hidden="true" class='rubberband__item'>n</span>
-          </div>
-        </div>
-          <p class="text-red fs-500 fw-400 ff-mono"> a self-taught web developer</p>
-        </div>
-        <canvas id="waves"></canvas>
-        <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-        <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-      </section>
-      
-      <section id="about" class="about section-container reveal">
-        <div class="about__wrapper">
-        <h2 class="section-title"><span aria-hidden="true">01.</span>  About me</h2>
-        <div class="about__content flex">
-          <div class="about__text fs-500 text-grey-light">
-            <p>Hello ! My name is Tristan Berger, I'm a 24 years old engineer aspiring to become a full-stack developer.</p>
-            <p>I have one year of experience as an electronic engineer, but I decided in September 2021 to jump into the world of web development. 
-              I started this journey by myself following online courses and creating my own projects.</p>
-              
-            <p>I feel like this environment fits for me, I’m comfortable and most importantly I love what I’m doing.</p>
-          </div>
-          <div class="about__image"> <img  src='../public/img/profile_300px.webp' alt='profile pic'></div>
-        </div>
+        </footer>
       </div>
-     
-      </section>
-
-      <section id="skills" class="skills section-container reveal">
-        <div class="skills__wrapper">
-        <h2 class="section-title"><span aria-hidden="true">02.</span>  My Skills</h2>
-        <div class="skills__content flex">
-          <div class="skills__text fs-500 text-grey-light">
-            <p>Since the beginning of my journey, I use online resources such as openClassrooms, Codecademy etc.. 
-              to learn languages of the web, but I also followed courses about web fundamentals, 
-              SEO and accessibility which were notions I didn’t know much about.</p>
-            <p>I used to develop in C/C++, so it made it a bit easier to learn HTML/CSS/JavaScript and React. </p>
-
-            <p>To develop my skills as much as possible, i’ve completed FrontendMentor challenges, and I've made some personal projects. </p>
-          </div>
-          <div class="skills__logos grid"> 
-              <i class='fab fab fa-html5'></i>
-              <i class='fab fab fa-css3-alt'></i>
-              <i class='fab fab fa-js'></i>
-              <i class='fab fab fa-react'></i>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-      <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-      </section>
-
-      <section id="project" class="project section-container">
-        <div class="project__wrapper">
-        <h2 class="section-title reveal"><span aria-hidden="true">03.</span> Some projects</h2>
-        <div class="project__content flex">
-
-          <div class="project__item grid reveal">
-            <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/netflix-clone/" target="_blank" rel="noreferrer"><h3 > Netflix Clone</h3></a>
-              <p class="project__text__description">A Netflix clone built with react, allowing to see trailers and important information of the movies. Firebase is used for authentication, and the movies are taken from The Movie Database API. 
-                Users can filter movies by category, but also search for any movie available in the database using the search bar.
-              </p>
-              <ul class="project__text__tech ">
-                <li>SASS</li>
-                <li>React</li>
-                <li>API</li>
-                <li>Firebase</li>
-              </ul>
-              <div class="project__text__links links">
-                <a title="Github" href="https://github.com/TristanBerger6/netflix-clone" aria-label="netflix github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a title="External Link" href="https://tristanberger6.github.io/netflix-clone/" aria-label="netflix external link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-
-            </div>
-            <a class="project__image" href='https://tristanberger6.github.io/netflix-clone/' target="_blank" rel="noreferrer" >
-              <img src="../public/img/netflix_700px.webp" alt='netflix project preview'>
-            </a>
-          </div>
-
-          <div class="project__item grid reveal">
-            <div class="project__text">
-              <a class="project__text__title" href="https://tristanberger6.github.io/Dofus-like-game/" target="_blank" rel="noreferrer" ><h3 >Clofus mini-game</h3></a>
-              <p class="project__text__description">A Javascript coded mini-game greatly inspired by the MMORPG Dofus.
-                The game includes a home map in which the user can move freely thanks to the implementation of Dijkstra pathfinding algorithm . 
-                Then, the user has access to a tactical battle quite complex. 
-                In order to obtain a very powerful object, he has to cross a labyrinth protected by a monster.
-              </p>
-              <ul class="project__text__tech ">
-                <li>SASS</li>
-                <li>JS</li>
-              </ul>
-              <div class="project__text__links links">
-                <a title="Github" href="https://github.com/TristanBerger6/Dofus-like-game" aria-label="clofus github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a title="External Link" href="https://tristanberger6.github.io/Dofus-like-game/" aria-label="clofus external link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-
-            </div>
-            <a class="project__image" href='https://tristanberger6.github.io/Dofus-like-game/' target="_blank" rel="noreferrer" >
-              <img src="../public/img/clofus_700px.webp" alt='clofus project preview'>
-            </a>
-          </div>
-
-          <div class="project__item grid reveal">
-            <div class="project__text">
-              
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_space_tourism/" target="_blank" rel="noreferrer"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >Space tourism</h3></a>
-              <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out a multi-page space tourism website and get it looking as close
-                to the design as possible. I discovered the power of utility classes and custom properties. The website follows ARIA specifications, is fully responsive, and uses JavaScript
-                to dynamically change the content.
-              </p>
-              <ul class="project__text__tech ">
-                <li>SASS</li>
-                <li>JS</li>
-                <li>Custom properties</li>
-                <li>Utility classes</li>
-              </ul>
-              <div class="project__text__links links">
-                <a title="Github" href="https://github.com/TristanBerger6/FM_space_tourism" aria-label="space tourism github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a title="External Link" href="https://tristanberger6.github.io/FM_space_tourism/" aria-label="space tourism external link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-
-            </div>
-            <a class="project__image" href='https://tristanberger6.github.io/FM_space_tourism/' target="_blank"  rel="noreferrer">
-              <img src="../public/img/space_tourism_700px.webp" alt='space tourism project preview'>
-            </a>
-          </div>
-
-          <div class="project__item grid reveal">
-            <div class="project__text">
-              
-              <a class="project__text__title" href="https://tristanberger6.github.io/FM_ip-address-tracker/" target="_blank" rel="noreferrer"><p class="ff-mono fs-400 text-green"> FrontendMentor Challenge</p><h3 >IP address tracker</h3></a>
-              <p class="project__text__description">A challenge proposed by Frontend Mentor. The challenge was to build out an IP Address Tracker app and get it looking as close to the design as possible. 
-                The app is built with react, uses IP Geolocation API by IPify, and LeafletJS to generate the map. Users are able to see their own IP adress on initial page load, and search for any Ip addresses or domains
-                and see its location and some additional information.
-              </p>
-              <ul class="project__text__tech ">
-                <li>SASS</li>
-                <li>JS</li>
-                <li>React</li>
-                <li>API</li>
-              </ul>
-              <div class="project__text__links links">
-                <a title="Github" href="https://github.com/TristanBerger6/FM_ip-address-tracker" aria-label="ip tracker github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a title="External Link" href="https://tristanberger6.github.io/FM_ip-address-tracker/" aria-label="ip tracker external link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-
-            </div>
-            <a class="project__image" href='https://tristanberger6.github.io/FM_ip-address-tracker/' target="_blank" rel="noreferrer">
-              <img src="../public/img/ip_700px.webp" alt='ip tracker project preview'>
-            </a>
-          </div>
-
-
-          <div class="project__item grid reveal">
-            <div class="project__text">
-              <a class="project__text__title" href="https://tristan-berger.com/" target="_blank" rel="noreferrer"><h3 >Portfolio</h3></a>
-              <p class="project__text__description">The website on which you are currently, realized without framework, in English and French, with redirection according to the country of the user. This website is fully accessible,
-                it follows ARIA specifications and is optimized for SEO (tested with lighthouse). Firebase is used for the back-end, its 
-                realtime database to store datas from the contact form, as well as the cloud functions to send me an email when modifying the 
-                database ( nodemailer with OAuth2.0 protocol ).
-
-              </p>
-              <ul class="project__text__tech ">
-                <li>SASS</li>
-                <li>JS</li>
-                <li>Firebase</li>
-              </ul>
-              <div class="project__text__links links">
-                <a title="Github" href="https://github.com/TristanBerger6/portfolio" aria-label="ip tracker github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a title="External Link" href="https://tristan-berger.com/" aria-label="ip tracker external link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-
-            </div>
-            <a class="project__image" href='https://tristan-berger.com/' target="_blank" rel="noreferrer" >
-              <img src="../public/img/portfolio.webp" alt='portfolio project preview'>
-            </a>
-          </div>
-
-
-        </div>
-        </div>
-        <div class="scroll-down"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-        <div class="scroll-down scroll-down--left"><p>scroll down</p><div class="scroll-down__arrow" aria-hidden="true"></div></div>
-      </section>
-
-      <section id="contact" class="contact section-container reveal">
-        <div class="contact__wrapper">
-        <h2 class="section-title"><span aria-hidden="true">04.</span>Contact me</h2>
-        <div class="contact__content flex">
-          <p class="ff-mono text-grey-light "><span> Currently open to work, feel free to contact me !</span></p>
-          <form id="contactForm" class="contact__form flex" action="#" >
-            <div class='alert'> Your message has been sent</div>
-            <label class="sr-only" for="name" >Name</label>
-            <input id="name" type='text' placeholder="Name" required>
-            <label class="sr-only" for="email" >Email</label>
-            <input id="email" type='email' placeholder="Email" required>
-            <label class="sr-only" for="message" >Message</label>
-            <textarea id="message"  placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class='btn ff-mono'>Send message</button>
-          </form>
-        </div>
-      </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class='section-container'>
-        <ul class="footer__links links flex">
-          <li><a title="Github Profile" href="https://github.com/TristanBerger6/" aria-label="profile github link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></li>
-          <li><a title="Linkedin Profile" href="https://www.linkedin.com/in/tristan-berger-991798140/" aria-label="profile linkedin link" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a></li>
-          <li><a title="Email" href="mailto:tristan.berger6@gmail.com" aria-label="mail link" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-        <p class='text-grey-light ff-mono fs-500'>© 2022 Tristan Berger</p>
-      </div>
-
-    </footer>
-  </div>
-
-
-  </div>
-
-
-</body>
+    </div>
+  </body>
 </html>
