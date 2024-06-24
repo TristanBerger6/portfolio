@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     .getElementById('contactForm')
     .addEventListener('submit', function (e) {
       e.preventDefault();
-      const apiKey = process.env.BREVO_API_KEY;
+      const apiKey =
+        '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';
 
       var name = document.getElementById('name').value;
       var email = document.getElementById('email').value;
