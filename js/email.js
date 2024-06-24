@@ -1,42 +1,71 @@
-document.addEventListener('DOMContentLoaded', function () {
-  document
-    .getElementById('contactForm')
-    .addEventListener('submit', function (e) {
-      e.preventDefault();
-      const apiKey =
-        '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';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js';
+import {
+  getDatabase,
+  set,
+  ref,
+  push,
+  child,
+  update,
+} from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
+const firebaseConfig = {
+  databaseURL:
+    'https://portfolio-9cbf7-default-rtdb.europe-west1.firebasedatabase.app/',
+};
 
-      // Create JSON object with data to send
-      var data = {
-        sender: {
-          name: 'Tuss',
-          email: 'noreply@tristan-berger.com',
-        },
-        to: [{ email: 'tristan.berger6@gmail.com', name: 'Tuss' }], // Replace with actual recipient email and name
-        subject: 'Message from ' + name,
-        textContent: 'Email: ' + email + '\n\nMessage: ' + message,
-      };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-      const dataJson = JSON.stringify(data);
+// Reference messages collection
+var database = getDatabase(app);
 
-      var xhr = new XMLHttpRequest();
-      xhr.withCredentials = true; // Set credentials mode to include cookies
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-      xhr.addEventListener('readystatechange', function () {
-        if (this.readyState === this.DONE) {
-          console.log(this.responseText);
-        }
-      });
+// Submit form
+function submitForm(e) {
+  e.preventDefault();
 
-      xhr.open('POST', 'https://api.brevo.com/v3/smtp/email');
-      xhr.setRequestHeader('accept', 'application/json');
-      xhr.setRequestHeader('content-type', 'application/json');
-      xhr.setRequestHeader('api-key', apiKey);
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var message = getInputVal('message');
 
-      xhr.send(JSON.stringify(dataJson)); // Send JSON data as payload
-    });
-});
+  // Save message
+  saveMessage(name, email, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'grid';
+
+  // Hide alert after 3 seconds
+  setTimeout(function () {
+    document.querySelector('.alert').style.display = 'none';
+  }, 3000);
+
+  // Clear form
+  document.getElementById('contactForm').reset();
+}
+
+// Function to get get form values
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, message) {
+  const postData = {
+    name: name,
+    message: message,
+    email: email,
+  };
+  const newPostKey = push(child(ref(database), ' messages')).key;
+
+  const updates = {};
+  // Write the new post's data simultaneously in the posts list and the user's post list.
+  updates['/messages/' + newPostKey] = postData;
+
+  update(ref(database), updates);
+}
