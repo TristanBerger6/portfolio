@@ -34,11 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       xhr.open('POST', 'https://api.brevo.com/v3/smtp/email');
       xhr.setRequestHeader('accept', 'application/json');
       xhr.setRequestHeader('content-type', 'application/json');
-<<<<<<< HEAD
-      xhr.setRequestHeader('api-key', '');
-=======
       xhr.setRequestHeader('api-key', apiKey);
->>>>>>> 3f2ba34 (added API KEY to netlify env)
 
       xhr.send(JSON.stringify(dataJson)); // Send JSON data as payload
     });
