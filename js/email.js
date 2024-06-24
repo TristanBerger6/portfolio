@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .getElementById('contactForm')
     .addEventListener('submit', function (e) {
       e.preventDefault();
+      const apiKey = process.env.BREVO_API_KEY;
 
       var name = document.getElementById('name').value;
       var email = document.getElementById('email').value;
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         textContent: 'Email: ' + email + '\n\nMessage: ' + message,
       };
 
-      const data = JSON.stringify(undefined);
+      const dataJson = JSON.stringify(data);
 
       var xhr = new XMLHttpRequest();
       xhr.withCredentials = true; // Set credentials mode to include cookies
@@ -33,8 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
       xhr.open('POST', 'https://api.brevo.com/v3/smtp/email');
       xhr.setRequestHeader('accept', 'application/json');
       xhr.setRequestHeader('content-type', 'application/json');
+<<<<<<< HEAD
       xhr.setRequestHeader('api-key', '');
+=======
+      xhr.setRequestHeader('api-key', apiKey);
+>>>>>>> 3f2ba34 (added API KEY to netlify env)
 
-      xhr.send(JSON.stringify(data)); // Send JSON data as payload
+      xhr.send(JSON.stringify(dataJson)); // Send JSON data as payload
     });
 });
