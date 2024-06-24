@@ -28,7 +28,7 @@
       src="https://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js"
       defer
     ></script>
-    <script type="module" src="../js/firebase.js" async></script>
+    <script type="module" src="../js/email.js" async></script>
     <script src="../js/index.js" defer></script>
 
     <title>Tristan Berger | Développeur Web</title>
@@ -184,29 +184,17 @@
               <div class="about__content flex">
                 <div class="about__text fs-500 text-grey-light">
                   <p>
-                    Bonjour ! Je m'appelle Tristan Berger, je suis un ingénieur
-                    de 24 ans qui aspire à devenir développeur full-stack.
+                    Bonjour ! Je m'appelle Tristan Berger, je suis un développeur web autodidacte 
+                    de 26 ans, initialement titulaire d'un diplôme d'ingénieur en mécatronique.
                   </p>
                   <p>
-                    J'ai un an d'expérience en tant qu'ingénieur en
-                    électronique, mais en septembre 2021, j'ai décidé de quitter
-                    ce domaine qui ne me passionnait pas pour me lancer dans le
-                    développement web. J'ai commencé en autodidacte, en suivant
-                    des cours en ligne et en créant mes propres projets.
-                  </p>
-
-                  <p>
-                    J'ai choisi de me lancer dans cette reconversion car j'ai
-                    toujours adoré coder, je sens que le développement web fait
-                    partie de mon univers et que c'est un milieu dans lequel je
-                    vais m'épanouir. Je me sens à l'aise quand je développe et
-                    je suis extrêmement motivé à l'idée d'apprendre et de
-                    progresser pour un jour exceller dans ce domaine.
+                    Cela fait maintenant plus de 2 ans que je travaille en tant que développeur web full-stack dans une agence de communication et marketing.
+                    Fort de mon expérience actuelle, je suis à la recherche de nouvelles opportunités !
                   </p>
                 </div>
                 <div class="about__image">
                   <img
-                    src="../public/img/profile_300px.webp"
+                    src="../public/img/tb_2024_300px.JPG"
                     alt="profil pic"
                   />
                 </div>
@@ -222,30 +210,18 @@
               <div class="skills__content flex">
                 <div class="skills__text fs-500 text-grey-light">
                   <p>
-                    Depuis le début de mon parcours, j'utilise des ressources en
-                    ligne comme openClassrooms, Codecademy etc... pour apprendre
-                    les langages du web, mais j'ai aussi suivi des cours sur les
-                    fondamentaux du web, le SEO et l'accessibilité qui étaient
-                    des notions que je ne connaissais que très peu.
+                    Grâce à mes formations et à l'expérience que j'ai pu acquérir, je considère avoir des connaissances variées dans le domaine de la tech en général. <br/>
+                    Je suis curieux, fast-learner et très appliqué dans mon travail. J'adore transmettre mon savoir et vulgariser des notions techniques pour permettre à presque n'importe qui de les comprendre. <br/>
+                    J'aime débugger, aborder un problème étape par étape, de l'aspect général pour arriver aux points plus spécifiques. Mon travail est toujours très organisé et structuré, presque algorithmique ! 
                   </p>
-                  <p>
-                    Mes expériences passées m'ont permis d'avoir des bases
-                    solides en programmation, cela a donc facilité
-                    l'apprentissage de HTML/CSS/JS/React et PHP.
-                  </p>
-
-                  <p>
-                    Pour développer mes compétences autant que possible, j'ai
-                    complété des challenges FrontendMentor, et j'ai réalisé
-                    quelques projets personnels.
-                  </p>
+                  <p> Bien sûr, j'ai également des compétences spécifiques en développement, mais pour ne pas être trop exhaustif, je vous invite à consulter mon CV !</p>
                 </div>
-                <div class="skills__logos grid">
+                <!-- <div class="skills__logos grid">
                   <i class="fab fab fa-sass"></i>
                   <i class="fab fab fa-php"></i>
                   <i class="fab fab fa-js"></i>
                   <i class="fab fab fa-react"></i>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="scroll-down">
@@ -261,14 +237,14 @@
           <section id="project" class="project section-container">
             <div class="project__wrapper">
               <h2 class="section-title reveal">
-                <span aria-hidden="true">03.</span>Quelques projets
+                <span aria-hidden="true">03.</span>Projets de formation
               </h2>
               <div class="project__content flex">
                 <div class="project__item grid reveal">
                   <div class="project__text">
                     <a
                       class="project__text__title"
-                      href="https://tbtweet.go.yj.fr/"
+                      href="https://twclone-tb6.000webhostapp.com/"
                       target="_blank"
                       rel="noreferrer"
                       ><h3>Clone Twitter</h3></a
@@ -281,7 +257,8 @@
                       complexité, mais également car c'est ma première
                       expérience avec le langage PHP. J'ai décidé de ne pas
                       utiliser de framework afin de me familiariser avec ce
-                      nouveau langage.
+                      nouveau langage. <br/><br/>
+                      (Possibilitée de se connecter sans créer de compte pour tester les fonctionnalités)
                     </p>
                     <ul class="project__text__tech">
                       <li>SASS</li>
@@ -302,7 +279,7 @@
                       ></a>
                       <a
                         title="Lien externe"
-                        href="https://tbtweet.go.yj.fr/"
+                        href="https://twclone-tb6.000webhostapp.com/"
                         aria-label="twitter external link"
                         target="_blank"
                         rel="noreferrer"
@@ -312,7 +289,7 @@
                   </div>
                   <a
                     class="project__image"
-                    href="https://tbtweet.go.yj.fr/"
+                    href="https://twclone-tb6.000webhostapp.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -506,17 +483,12 @@
                       framework, en anglais et français, avec redirection en
                       fonction du pays de l'utilisateur. Ce site est entièrement
                       accessible, il respecte les spécifications ARIA et il est
-                      optimisé pour le SEO ( testé avec lighthouse ). Firebase
-                      est utilisé pour le back-end, notamment sa realtime
-                      database pour stocker les données du formulaire de
-                      contact, ainsi que les clouds functions pour m'envoyer un
-                      mail lors de la modification de la database ( nodemailer
-                      avec protocole OAuth2.0 ).
+                      optimisé pour le SEO ( testé avec lighthouse ). J'utilise l'API Brevo pour l'envoie des mails transactionnels.
                     </p>
                     <ul class="project__text__tech">
                       <li>SASS</li>
                       <li>JS</li>
-                      <li>Firebase</li>
+                      <li>API</li>
                     </ul>
                     <div class="project__text__links links">
                       <a
@@ -626,7 +598,7 @@
                 ></a>
               </li>
             </ul>
-            <p class="text-grey-light ff-mono fs-500">© 2022 Tristan Berger</p>
+            <p class="text-grey-light ff-mono fs-500">© 2024 Tristan Berger</p>
           </div>
         </footer>
       </div>
