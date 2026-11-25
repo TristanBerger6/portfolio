@@ -514,18 +514,20 @@
                     >
                     <p class="project__text__description">
                       Le site sur lequel vous vous trouvez, réalisé sans
-                      framework, en anglais et français, avec redirection en
-                      fonction du pays de l'utilisateur. Ce site est entièrement
-                      accessible, il respecte les spécifications ARIA et il est
-                      optimisé pour le SEO ( testé avec lighthouse ). Firebase
-                      est utilisé pour le back-end, notamment sa realtime
-                      database pour stocker les données du formulaire de
-                      contact. J'ai également créer une firebase cloud function qui fait une requête à l'API Brevo pour m'envoyer les données par mail.
+                      framework, en anglais et en français, avec redirection en
+                      fonction du pays du visiteur. Il est entièrement
+                      accessible, respecte les spécifications ARIA et est
+                      optimisé pour le SEO (testé avec Lighthouse). Le
+                      formulaire de contact est envoyé à une Netlify Function
+                      qui valide le message et me le transmet par e-mail via
+                      l'API Resend.
                     </p>
                     <ul class="project__text__tech">
                       <li>SASS</li>
                       <li>JS</li>
                       <li>API</li>
+                      <li>Netlify Functions</li>
+                      <li>Resend</li>
                     </ul>
                     <div class="project__text__links links">
                       <a
