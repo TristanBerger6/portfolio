@@ -517,10 +517,10 @@
                       framework, en anglais et français, avec redirection en
                       fonction du pays de l'utilisateur. Ce site est entièrement
                       accessible, il respecte les spécifications ARIA et il est
-                      optimisé pour le SEO ( testé avec lighthouse ). Firebase
-                      est utilisé pour le back-end, notamment sa realtime
-                      database pour stocker les données du formulaire de
-                      contact. J'ai également créer une firebase cloud function qui fait une requête à l'API Brevo pour m'envoyer les données par mail.
+                      optimisé pour le SEO ( testé avec lighthouse ). Le formulaire de
+                      contact est géré par une fonction serverless Netlify qui
+                      valide les données et me les envoie par mail via l'API
+                      Resend.
                     </p>
                     <ul class="project__text__tech">
                       <li>SASS</li>
