@@ -1,71 +1,48 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js';
-import {
-  getDatabase,
-  set,
-  ref,
-  push,
-  child,
-  update,
-} from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Sends the contact form to the Netlify function, which emails it through Resend.
+const form = document.getElementById('contactForm');
+const alertBox = form.querySelector('.alert');
+const button = form.querySelector('button[type="submit"]');
+const isFr = document.documentElement.lang === 'fr';
 
-const firebaseConfig = {
-  databaseURL:
-    'https://portfolio-9cbf7-default-rtdb.europe-west1.firebasedatabase.app/',
+const MESSAGES = {
+  sent: isFr ? 'Votre message a bien été envoyé' : 'Your message has been sent',
+  error: isFr
+    ? "Le message n'a pas pu être envoyé, réessayez ou écrivez-moi par e-mail."
+    : 'Your message could not be sent, please try again or email me directly.',
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+function showAlert(text) {
+  alertBox.textContent = text;
+  alertBox.style.display = 'grid';
+  setTimeout(() => {
+    alertBox.style.display = 'none';
+  }, 4000);
+}
 
-// Reference messages collection
-var database = getDatabase(app);
-
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-// Submit form
-function submitForm(e) {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  button.disabled = true;
 
-  // Get values
-  var name = getInputVal('name');
-  var email = getInputVal('email');
-  var message = getInputVal('message');
-
-  // Save message
-  saveMessage(name, email, message);
-
-  // Show alert
-  document.querySelector('.alert').style.display = 'grid';
-
-  // Hide alert after 3 seconds
-  setTimeout(function () {
-    document.querySelector('.alert').style.display = 'none';
-  }, 3000);
-
-  // Clear form
-  document.getElementById('contactForm').reset();
-}
-
-// Function to get get form values
-function getInputVal(id) {
-  return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(name, email, message) {
-  const postData = {
-    name: name,
-    message: message,
-    email: email,
+  const payload = {
+    name: form.querySelector('#name').value,
+    email: form.querySelector('#email').value,
+    message: form.querySelector('#message').value,
+    website: form.querySelector('#website').value,
   };
-  const newPostKey = push(child(ref(database), ' messages')).key;
 
-  const updates = {};
-  // Write the new post's data simultaneously in the posts list and the user's post list.
-  updates['/messages/' + newPostKey] = postData;
-
-  update(ref(database), updates);
-}
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    showAlert(MESSAGES.sent);
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    showAlert(MESSAGES.error);
+  } finally {
+    button.disabled = false;
+  }
+});

@@ -581,6 +581,10 @@
                 </p>
                 <form id="contactForm" class="contact__form flex" action="#">
                   <div class="alert">Your message has been sent</div>
+                  <div aria-hidden="true" style="position: absolute; left: -9999px">
+                    <label for="website">Leave this field empty</label>
+                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+                  </div>
                   <label class="sr-only" for="name">Name</label>
                   <input id="name" type="text" placeholder="Name" required />
                   <label class="sr-only" for="email">Email</label>
